@@ -49,7 +49,7 @@
 			"footer-para2": "Note: Needplasma does not promote any monetary transaction between patient and donor",
 			"copyrightext": "Copyright © 2021 NeedPlasma - All Rights Reserved.",
 			"video-msg-title": "A message for you",
-			"donate-plasma-btn":"Donate Plasma"			
+			"donate-plasma-btn":"Donate Plasma"
 		},
 		"Hindi": {
 			"current-language": "हिंदी",
@@ -101,7 +101,7 @@
 			"video-msg-title": "आपके लिए एक संदेश",
 			"donate-plasma-btn":"प्लाज्मा दान करें"
 		},
-	"Tamil": {
+		"Tamil": {
 			"current-language": "தமிழ்",
 			"main-head": "பிளாஸ்மா உயிர்களை காப்பாற்றுகிறது",
 			"main-subhead": "குணமடைந்த கொரோனா நோயாளியிடம் இருந்து எடுக்கப்படும் பிளாஸ்மா பல உயிர்களைக் காப்பாற்றும்",
@@ -149,7 +149,7 @@
 			"footer-para2": "குறிப்பு: நீட் பிளாஸ்மா நோயாளிக்கும் நன்கொடையாளருக்கும் இடையில் எந்தவொரு பண பரிவர்த்தனையையும் ஊக்குவிக்காது",
 			"copyrightext": "பதிப்புரிமை २०२१ © நீட் பிளாஸ்மா - அனைத்து உரிமைகளும் பாதுகாக்கப்பட்டவை",
 			"video-msg-title": "உங்களுக்கான செய்தி",
-			"donate-plasma-btn":"பிளாஸ்மாவை தானம் செய்யுங்கள்"		
-		}	
+			"donate-plasma-btn":"பிளாஸ்மாவை தானம் செய்யுங்கள்"
+		}
 	}
 }
