@@ -17,7 +17,15 @@
     margin-right: auto;
     width: 75%;
     }
-
+    .social-links{
+        display: inline-block;
+    }
+    .social-imgs{
+        display: inline-block;
+    }
+    .social-links-desktop{
+        padding-top: 0.75em;
+    }
     </style>
   </head>
 
@@ -33,10 +41,17 @@
       <a href="#!" class="brand-logo"><img src="images/needplasmalogo.webp" height="30" alt=""></a>
       <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
       <ul class="right hide-on-med-and-down">
-        <li><a href="#about-head" lang="en">About Us</a></li>
+        
+        <li><a href="https://www.instagram.com/needplasma/" class="left s4 social-links-desktop"> 
+            <img class="" src="images/instagram.ico" alt="instagram link"></a></li>
+        <li><a href="https://twitter.com/NeedPlasmaIndia" class="right s4 social-links-desktop">
+            <img class="" src="images/twitter.ico" alt="facebook link"></a></li>
+        <li><a href="https://www.youtube.com/channel/UC2nLg5OkK6RAGahPG52HYsw" class="right s4 social-links-desktop">
+            <img class="" src="images/youtube.png" alt="youtube link"></a></li>
         <li><a href='javascript:changeLanguage("Hindi")' lang='ta'>हिन्दी</a></li>
         <li><a href='javascript:changeLanguage("English")' lang='en'><b>English</b></a></li>
         <li><a href='javascript:changeLanguage("Tamil")' lang='ta'>தமிழ்</a></li>
+        <li><a href="#about-head" lang="en">Contact Us</a></li>
         <!-- Dropdown Trigger 
         <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">भाषा |Language<i class="material-icons right">arrow_drop_down</i></a></li>
         -->
@@ -44,11 +59,16 @@
     </div>
   </nav>
 </div>
-    <ul class="sidenav" id="mobile-demo">
-        <li><a href="#about-head" lang="en">About Us</a></li>        
-        <li><a href='javascript:changeLanguage("Hindi")' lang='ta'>हिन्दी</a></li>
+    <ul class="sidenav" id="mobile-demo">      
+         <li style="padding-top:10%;">
+            <a href="https://www.instagram.com/needplasma/" class="left s4" target="_blank"> <img class="" src="images/instagram.ico"></a>
+            <a href="https://twitter.com/NeedPlasmaIndia" class="right s4" target="_blank"> <img class="" src="images/twitter.ico"></a>
+            <a href="https://www.youtube.com/channel/UC2nLg5OkK6RAGahPG52HYsw" class="right s4" target="_blank"> <img class="" src="images/youtube.png"></a>
+        </li><br>         
+        <li style="padding-top:10%;"><a href='javascript:changeLanguage("Hindi")' lang='hi'>हिन्दी</a></li>
         <li><a href='javascript:changeLanguage("English")' lang='en'><b>English</b></a></li>
         <li><a href='javascript:changeLanguage("Tamil")' lang='ta'>தமிழ்</a></li>
+        <li><a href="#about-head" lang="en">Contact Us</a></li>
     </ul>
 <main>
         <div class="container">
@@ -66,7 +86,7 @@
                 <div class="col m4">    
                     <h5 id="reg-donatehead">WANT TO DONATE PLASMA</h5>
                     <p id="reg-donatepara">Recovered or quarantined patients of COVID-19 who are willing to donate</p>
-                    <a class="waves-effect waves-light btn" href='https://forms.gle/mTp6J3sGRHucxqra7'>Donate Plasma</a><br><br>
+                    <a class="waves-effect waves-light btn" href='https://forms.gle/mTp6J3sGRHucxqra7'><span id="donate-plasma-btn">Donate Plasma</span></a><br><br>
                 </div>
                 <div class="col m4">    
                     <h5 id="reg-needhead">YOU NEED THE THERAPY (LOOKING FOR PLASMA</h5>
@@ -76,7 +96,10 @@
                 <div class="col m4">    
                     <h5 id="reg-volhead">REGISTER AS A VOLUNTEER (JOIN US)</h5>
                     <p id="reg-volpara">Recovered or quarantined patients of COVID-19 who are willing to donate</p>
-                    <a class="waves-effect waves-light btn" href='https://forms.gle/FGyztKourfqiRM2MA'><span id="reg-volbutton">Help Us</span></a><br><br>
+                    <!-- Modal Trigger -->
+                    <button data-target="volunteerPopup" class="waves-effect waves-light btn modal-trigger">
+                        <span id="reg-volbutton">Help Us</span>
+                    </button>               
                 </div>
               </div>
         </div>
@@ -148,73 +171,104 @@
         </div> 
 <hr><br><br>        
         <div class="container">
-            <h4 class='center-align' id="donate-head"><b>WHO CAN DONATE</b></h4>
+            <h4 class='center-align class="donate-class-head'><b>WHO CAN DONATE</b></h4>
             <div class="row center-align">
                 <br><br>
                 <div class="col m6"> 
-                    <h5 id="donate-canhead">CAN DONATE</h5>
+                    <img src="images/thumbs_up.png" height="100em" alt="thums-up">
+                    <h5 class="donate-class-canhead">CAN DONATE</h5>
                     <p>
-                        <span id="donate-canp1">Were tested positive for COVID-19</span><br>
-                        <span id="donate-canp2">Fully recovered and free of Symptoms for 14 days</span><br>
-                        <span id="donate-canp3">Between 18-60 years</span><br>
+                        <span class="donate-class-canp1">Were tested positive for COVID-19</span><br>
+                        <span class="donate-class-canp2">Fully recovered and free of Symptoms for 14 days</span><br>
+                        <span class="donate-class-canp3">Between 18-60 years</span><br>
                     </p>
                 </div>                
                 <div class="col m6">
-                    <h5 id="donate-canthead">CANNOT DONATE DONATE</h5>
+                    <img src="images/thumbs_down.png" height="100em" alt="thums-down">
+                    <h5 class="donate-class-canthead">CANNOT DONATE DONATE</h5>
                     <p>
-                        <span id="donate-cantp1">Weight less than 50 kg</span><br>
-                        <span id="donate-cantp2">Females who have ever been pregnant</span><br>
-                        <span id="donate-cantp3">B.P >140 and diastolic &lt;60 or &gt;90</span><br>
-                        <span id="donate-cantp4">Diabetic on insulin</span><br>
-                        <span id="donate-cantp5">Cancer Survivor</span><br>
-                        <span id="donate-cantp6">Uncontrolled diabetes Chronic kidney/heart/lung/liver disease.</span><br>
+                        <span class="donate-class-cantp1">Weight less than 50 kg</span><br>
+                        <span class="donate-class-cantp2">Females who have ever been pregnant</span><br>
+                        <span class="donate-class-cantp3">B.P >140 and diastolic &lt;60 or &gt;90</span><br>
+                        <span class="donate-class-cantp4">Diabetic on insulin</span><br>
+                        <span class="donate-class-cantp5">Cancer Survivor</span><br>
+                        <span class="donate-class-cantp6">Uncontrolled diabetes Chronic kidney/heart/lung/liver disease.</span><br>
                     </p>
                 </div>                 
             </div>
         </div>   
     <hr><br><br>        
             <div class="container">
+                <h4 class='center-align' id="recognition"><b>Recognition</b></h4>
                 <div class="row center-align">
                     <br><br>
-                    <div class="col m6 "> 
-                        <h5>Recognition</h5>
+                    <div class="col m4 push-m8"> 
+                        <img src="images/recognition.png" alt="" height="200em" class="center-img">
+                    </div>                     
+                    <div class="col m8 pull-m4"> 
                         <p id="footer-para1">
                             For every registration and verification of a recovered COVID-19 plasma donor you refer, you will be given a gift voucher<br><br>
                         </p>
                         <p id="footer-para2">
                             <b>Note: Needplasma does not promote any monetary transaction between patient and donor</b>
                         </p>
-                    </div>                
-                    <div class="col m6">
-                        <h5 id="about-head">About Us</h5>
+                    </div>
+                </div>
+            </div>
+        <hr><br><br>        
+            <div class="container">
+                <h4 class='center-align' id="about-head"><b>About Us</b></h4>
+                <div class="row center-align">
+                    <br><br>
+                    <div class="col m4"> 
+                        <img src="images/about.png" alt="" height="200em" class="center-img">
+                    </div>               
+                    <div class="col m8">
                         <p id="about-para1">
                             Needplasma Initiative was started by Prashant Saini during the first wave of pandemic in June 2020. The team has gradually increased and right now Needplasma has volunteers across India.
                         </p><br><p id="about-para2">It is a non commercial initiative started with an intention of helping people out in whatever possible way. If you want to reach out and understand more about the initiative, you can get in touch with him on the below handle<br>
                         </p>
-                        <br><a class="waves-effect waves-light btn" href='https://www.linkedin.com/in/sainiprashant7/' target="_blank"><span id="about-button">Get In Touch</span></a>
+                        <br><a class="waves-effect waves-light btn" href='mailto:info@needplasma.in' target="_blank"><span id="about-button">Get In Touch</span></a>
                     </div>                 
                 </div> 
             </div>
 
-<hr><br><br>           
-            <div class="container z-depth-4">
-                <br>
-                <h4 class='center-align' id="video-msg-title">A message for you</h4>
-                <div class="row center-align ">
-                    <br><br>
-                    <div class="col m8 offset-m2 ">
-                        <!-- <iframe  src="https://www.youtube.com/embed/Z8lLOJdp92I"></iframe> -->
-                        <div class="video-container">
-                            <iframe width="853" height="480" src="//www.youtube.com/embed/Z8lLOJdp92I?rel=0"></iframe>
-                          </div> <br>                       
-                    </div>
-                </div>
-            </div>
+
+  <!-- Modal Structure -->
+  <div id="volunteerPopup" class="modal modal-fixed-footer">
+    <div class="modal-content">
+      <h4>Welcome to the team</h4><hr>
+      <p>You can watch the video to know more while we onboard you to the team. Click the Join Now button to start</p>
+      <div class="video-container" id="video-1">
+        <iframe height="100em" src="//www.youtube.com/embed/Z8lLOJdp92I?rel=0"></iframe>
+      </div> <br>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-close waves-effect waves-grey btn-flat">Close</a>
+      <a class="waves-effect waves-light btn" href='https://forms.gle/FGyztKourfqiRM2MA' target="_blank"><span id="join-now">Join Now</span></a>
+    </div>
+  </div>
+
+<!-- Donation Pop Up -->
+  <div id="donatePopup" class="modal modal-fixed-footer">
+    <div class="modal-content">
+      <h4>Welcome to the team</h4><hr>
+
+    </div> <br>
+    <div class="modal-footer">
+      <a href="#!" class="modal-close waves-effect waves-grey btn-flat">Close</a>
+      <a class="waves-effect waves-light btn" href='https://forms.gle/FGyztKourfqiRM2MA' target="_blank"><span id="donate-now">Resister donor</span></a>
+    </div>
+  </div>
+
 </main>
 <footer class="teal lighten-2">
 <div class="footer-copyright">
-    <div class="container">
-    <a class="grey-text text-lighten-4" href="#!"><span id="copyrightext">Copyright © 2021 NeedPlasma. All rights reserved</span></a>
+    <div class="container white-text text-lighten-2">
+        <a class="grey-text text-lighten-4" href="#!"><span id="copyrightext">Copyright © 2021 NeedPlasma. All rights reserved</span></a>
+        <br>Credits- <a href="https://www.freepik.com/vectors/people" class="white-text text-lighten-2">People vector created by pch.vector - www.freepik.com</a>
+        <a href="https://www.freepik.com/vectors/abstract" class = "white-text text-lighten-2">Abstract vector created by macrovector - www.freepik.com</a>
+        <a href="https://www.freepik.com/vectors/heart" class = "white-text text-lighten-2" >Heart vector created by kreativkolors - www.freepik.com</a>
     </div>
   </div>
 </footer>
@@ -226,7 +280,8 @@
 <script>
 $( document ).ready(function() {
     $('.sidenav').sidenav();
-    $(".dropdown-trigger").dropdown();    
+    $(".dropdown-trigger").dropdown(); 
+    $('#volunteerPopup').modal();   
 });    
 
 function changeLanguage() {
@@ -236,8 +291,12 @@ function changeLanguage() {
         mydata=data
         for (const property in data.content[lang]) {
             //console.log(property);
-            $("#"+property).html(data.content[lang][property]);
-    }    
+            if ( property.search("class")>=0){
+                $("."+property).html(data.content[lang][property]);
+            }else{
+                $("#"+property).html(data.content[lang][property]);
+            }
+        }    
     });
 }
 
