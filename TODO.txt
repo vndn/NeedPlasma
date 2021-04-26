@@ -1,0 +1,8 @@
+html lang
+em to %
+Basic SEO
+Button  placement on changind language
+Embedded feeds
+Dashboard of stats
+Contact Us
+Content-> "about-para2" or add a new key
