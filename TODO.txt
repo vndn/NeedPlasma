@@ -1,8 +1,10 @@
 html lang
 em to %
 Basic SEO
-Button  placement on changind language
+Button  placement on changind language - Check increasing content length
 Embedded feeds
 Dashboard of stats
 Contact Us
-Content-> "about-para2" or add a new key
+Hit counter
+Remove video
+ASG
