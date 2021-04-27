@@ -305,24 +305,37 @@ $( document ).ready(function() {
     $(".dropdown-trigger").dropdown(); 
     $('#volunteerPopup').modal();   
     $('#languageSelector').modal();
-    $.getJSON( "content.json", function( data ) {
-        mydata=data
-        changeLanguage("English")
-        $('#languageButton').trigger('click');
-        var counter = 5;
-    var interval = setInterval(function() {
-        counter--;
-        // Display 'counter' wherever you want to display it.
-        $("#language-auto-select").html(counter)
-        if (counter == -1) {
-            // Display a login box
-            //$('#testLangBtn').trigger('langCloseBtn');  
-            $("#langModalText").html("");
-            $('#languageSelector').modal('close');
-            clearInterval(interval);
+    $.ajax({
+        type: 'GET',
+        url: "content.json",
+        data: "",
+        async: false,
+        beforeSend: function (xhr) {
+            if (xhr && xhr.overrideMimeType) {
+            xhr.overrideMimeType('application/json;charset=utf-8');
+            }
+        },
+        dataType: 'json',
+        success: function (data) {
+            //Do stuff with the JSON data
+            mydata=data
+            changeLanguage("English")
+            $('#languageButton').trigger('click');
+            var counter = 5;
+            var interval = setInterval(function() {
+                counter--;
+                // Display 'counter' wherever you want to display it.
+                $("#language-auto-select").html(counter)
+                if (counter == -1) {
+                    // Display a login box
+                    //$('#testLangBtn').trigger('langCloseBtn');  
+                    $("#langModalText").html("");
+                    $('#languageSelector').modal('close');
+                    clearInterval(interval);
+                }
+            }, 1000); 
         }
-    }, 1000);         
-    });   
+     });          
 
 });    
 
