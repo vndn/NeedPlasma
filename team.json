@@ -1,0 +1,125 @@
+{
+    "team":
+    [
+        {
+            "name":"Prashant Saini",
+            "designation": "Founder",
+            "image":"prashant_s.jpg",
+            "order":1
+        },
+        {
+            "name":"Ankit Kumar Gupta",
+            "designation": "Operations Lead",
+            "image":"ankit_g.jpg",
+            "order":2
+        },
+        {
+            "name":"Palak Agrawal",
+            "designation": "Volunteers Lead",
+            "image":"palak_a.png",
+            "order":3
+        },
+        {
+            "name":"Shivam Arya",
+            "designation": "Volunteers Lead",
+            "image":"dummy_m.jpg",
+            "order":3
+        },        
+        {
+            "name":"Ekanshu Gupta",
+            "designation": "Volunteers Lead",
+            "image":"ekanshu_g.jpg",
+            "order":4
+        },
+        {
+            "name":"Naman Ahir",
+            "designation": "Logistics Lead",
+            "image":"ekanshu_g.jpg",
+            "order":4
+        },        
+        {
+            "name":"Deepanshu Gairola",
+            "designation": "Logistics Lead",
+            "image":"deepanshu_g.jpeg",
+            "order":4
+        },
+        {
+            "name":"Devanshi Saini",
+            "designation": "Logistics Lead",
+            "image":"devanshi.jpg",
+            "order":4
+        },   
+        {
+            "name":"Mahek Agrawal",
+            "designation": "HR Lead",
+            "image":"mahek_a.jpg",
+            "order":4
+        },
+        {
+            "name":"Ayushi Agrawal",
+            "designation": "Industry Partnerships Co-Lead",
+            "image":"himanshu_r.jpg",
+            "order":4
+        },        
+        {
+            "name":"Himanshu Rathod",
+            "designation": "Creatives Lead",
+            "image":"himanshu_r.jpg",
+            "order":4
+        },
+        {
+            "name":"Aradhya Vats",
+            "designation": "College Partnerships Co-Lead",
+            "image":"aradhya.jpg",
+            "order":4
+        }, 
+        {
+            "name":"Anshuman Singh",
+            "designation": "College Partnerships Co-Lead",
+            "image":"anshuman_s.jpg",
+            "order":4
+        },   
+        {
+            "name":"Vandan Kumbhat",
+            "designation": "IT & Web Lead",
+            "image":"vandan.jpg",
+            "order":4
+        }, 
+        {
+            "name":"Kartik",
+            "designation": "Dev Ops Lead",
+            "image":"dummy_m.jpg",
+            "order":4
+        },   
+        {
+            "name":"Sejal Sahni",
+            "designation": "Social Media Manager",
+            "image":"sejal.jpg",
+            "order":4
+        },    
+        {
+            "name":"Ayushi Agrawal",
+            "designation": "Creatives Manager",
+            "image":"ayushi_a.jpg",
+            "order":4
+        },
+        {
+            "name":"Meghna Zohar",
+            "designation": "Content Lead",
+            "image":"dummy_f.jpg",
+            "order":4
+        },
+        {
+            "name":"Parv Julania",
+            "designation": "Social Media Manager",
+            "image":"parv.jpeg",
+            "order":4
+        },
+        {
+            "name":"Vandit Sawansukha",
+            "designation": "Marketing and PR Lead",
+            "image":"vandit.jpg",
+            "order":4
+        }                                                              
+    ]
+}

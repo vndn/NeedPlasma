@@ -1,6 +1,6 @@
 <?php
 #Hit Counter simple
-  $myfile = fopen("counter.txt", "a") or die("Unable to open file!");
+  $myfile = fopen("counter.txt", "a")
   $date = new DateTime();
   $txt = $date->format('Y-m-d H:i:s')."\n";
   fwrite($myfile,$txt);
@@ -13,7 +13,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Import materialize.css-->
     <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen"/>
-    <link rel="shortcut icon" href="/images/favicon.ico">
+    <link rel="shortcut icon" href="images/favicon.ico">
     <title>Need Plasma - Act now</title>
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
