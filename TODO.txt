@@ -7,4 +7,6 @@ Dashboard of stats
 Contact Us
 Hit counter
 Remove video
+AJAX cache
+Hit counter
 ASG

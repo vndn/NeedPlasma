@@ -1,5 +1,6 @@
 sudo su
 cd /opt/bitnami/apache/htdocs
+mv counter.txt ../
 rm * -rf
 git clone https://github.com/vndn/NeedPlasma/
 mv NeedPlasma/* .

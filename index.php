@@ -1,3 +1,11 @@
+<?php
+#Hit Counter simple
+  $myfile = fopen("counter.txt", "a") or die("Unable to open file!");
+  $date = new DateTime();
+  $txt = $date->format('Y-m-d H:i:s')."\n";
+  fwrite($myfile,$txt);
+  fclose($myfile);
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
