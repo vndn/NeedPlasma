@@ -63,7 +63,7 @@ $team = json_decode($str, true)['team'];
         <li><a href="https://www.youtube.com/channel/UC2nLg5OkK6RAGahPG52HYsw" target="_blank" class="right s4 social-links-desktop">
             <img class="" src="images/youtube.png" alt="youtube link"></a></li>
         <li><a href='mailto:info@needplasma.in' target="_blank" class="right s4 social-links-desktop">
-            <span id="email-btn"><img src="images/email.png" height="30"></span></a></li>
+            <span id="email-btn"><img src="images/email.png" height="30px"></span></a></li>
         <li><a href='./'>Home</a></li>
         <!-- Dropdown Trigger 
         <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">भाषा |Language<i class="material-icons right">arrow_drop_down</i></a></li>
@@ -85,28 +85,25 @@ $team = json_decode($str, true)['team'];
     </ul>
 
 <main>
+<div class="" style = 'df'>
+</div>  
   <div class="container">
     <div class="row center-align">
           <br><br>
           <img src="images/needplasmalogo.webp" height="50em" alt="">
           <h2 id="main-head">Meet Our Team</h2>
-          <h6 id="main-subhead"></h6>
+          <h6 class="member-name"  id="main-subhead"></h6>
         </div>
   </div>
   <br><hr><br>
-  <div class="container">
-      <?php foreach ($team as $i=>$member) { ?>
-      <?php $j=$i+1; if ($i%4==0) {echo '<div class="row center-align">'; }?>
+  <div class="container" style="max-height: 700px;">
+      <div class="row center-align" style="max-height: 700px;">
       
-            <div class="col s6 m3 white custom-boxes">
-                <br>
-                <img src="images/team/<?php echo $member["image"]?>" width="50%" alt="team-member" class="circle center z-depth-4">
-                <h6 class="member-name"><?php echo $member["name"]?></h6>
-                <p><?php echo $member["designation"]?></p>
+            <div class="col m6 white custom-boxes" >
+            <a class="twitter-timeline" data-height="350" href="https://twitter.com/NeedPlasmaIndia?ref_src=twsrc%5Etfw">
+                Tweets by NeedPlasmaIndia</a>  
             </div>
-        <?php if ($j%4==0) {echo '</div>';} }?>
-        
-
+        </div>
     </div>
 </main>
 
@@ -123,6 +120,8 @@ $team = json_decode($str, true)['team'];
     </div>
   </div>
 </footer>
+
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 </body>
 </html>

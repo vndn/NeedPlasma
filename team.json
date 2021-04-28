@@ -30,25 +30,19 @@
             "designation": "Volunteers Lead",
             "image":"ekanshu_g.jpg",
             "order":4
-        },
-        {
-            "name":"Naman Ahir",
-            "designation": "Logistics Lead",
-            "image":"naman_a.png",
-            "order":4
-        },        
+        },      
         {
             "name":"Deepanshu Gairola",
             "designation": "Logistics Lead",
             "image":"deepanshu_g.jpeg",
             "order":4
-        },
+        },  
         {
-            "name":"Devanshi Saini",
+            "name":"Naman Ahir",
             "designation": "Logistics Lead",
-            "image":"devanshi.jpg",
+            "image":"naman_a.png",
             "order":4
-        },   
+        },          
         {
             "name":"Mahek Agrawal",
             "designation": "HR Lead",
@@ -56,9 +50,15 @@
             "order":4
         },
         {
+            "name":"Devanshi Saini",
+            "designation": "Logistics Lead",
+            "image":"devanshi.jpg",
+            "order":4
+        },         
+        {
             "name":"Ayushi Agrawal",
             "designation": "Industry Partnerships Co-Lead",
-            "image":"himanshu_r.jpg",
+            "image":"ayushi_a1.jpg",
             "order":4
         },        
         {
