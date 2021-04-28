@@ -5,4 +5,5 @@ rm * -rf
 git clone https://github.com/vndn/NeedPlasma/
 mv NeedPlasma/* .
 rm NeedPlasma/ -r
+mv ../counter.txt .
 ls -l

@@ -1,6 +1,6 @@
 <?php
 #Hit Counter simple
-  $myfile = fopen("counter.txt", "a")
+  $myfile = fopen("counter.txt", "a");
   $date = new DateTime();
   $txt = $date->format('Y-m-d H:i:s')."\n";
   fwrite($myfile,$txt);
