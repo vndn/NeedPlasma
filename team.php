@@ -34,16 +34,13 @@ $team = json_decode($str, true)['team'];
     .social-links-desktop{
         padding-top: 0.75em;
     }
-    .custom-boxes{
-        display: inline-block;
-    }
     .member-name {
         font-weight: bold;
         }
     </style>
   </head>
 
-  <body class="grey lighten-4">
+  <body class="grey lighten-3">
 <!-- Dropdown Structure -->
 <!-- <ul id="dropdown1" class="dropdown-content">
     <li><a href='javascript:changeLanguage("Hindi")'>हिन्दी</a></li>
@@ -96,7 +93,7 @@ $team = json_decode($str, true)['team'];
   <br><hr><br>
   <div class="container">
       <?php foreach ($team as $i=>$member) { ?>
-      <?php $j=$i+1; if ($i%4==0) {echo '<div class="row center-align">'; }?>
+      <?php $j=$i+1; if ($i%4==0) {echo '<div class="row center-align white">'; }?>
       
             <div class="col s6 m3 white custom-boxes">
                 <br>
@@ -104,9 +101,7 @@ $team = json_decode($str, true)['team'];
                 <h6 class="member-name"><?php echo $member["name"]?></h6>
                 <p><?php echo $member["designation"]?></p>
             </div>
-        <?php if ($j%4==0) {echo '</div>';} }?>
-        
-
+        <?php if ($j%4==0) {echo '</div>';} }?>      
     </div>
 </main>
 

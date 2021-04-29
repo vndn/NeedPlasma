@@ -7,3 +7,5 @@ mv NeedPlasma/* .
 rm NeedPlasma/ -r
 mv ../counter.txt .
 ls -l
+
+#Deployments might break connections and make site unavailale for few (<5) mins

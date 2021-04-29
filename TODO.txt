@@ -1,12 +1,9 @@
 html lang
 em to %
 Basic SEO
-Button  placement on changind language - Check increasing content length
-Embedded feeds
 Dashboard of stats
-Contact Us
-Hit counter
-Remove video
-AJAX cache
-Hit counter
-ASG
+Hit counter better
+Remove video from volunteer button
+ASG - But then we need an AMI or user data which can do the steps in deploymnet.txt
+     (counter.txt will not exist, take care in deployment script, test once on http)
+     

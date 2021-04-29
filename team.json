@@ -60,25 +60,25 @@
             "designation": "Industry Partnerships Co-Lead",
             "image":"ayushi_a1.jpg",
             "order":4
-        },        
-        {
-            "name":"Himanshu Rathod",
-            "designation": "Creatives Lead",
-            "image":"himanshu_r.jpg",
-            "order":4
-        },
-        {
-            "name":"Aradhya Vats",
-            "designation": "College Partnerships Co-Lead",
-            "image":"aradhya.jpg",
-            "order":4
-        }, 
+        },   
         {
             "name":"Anshuman Singh",
             "designation": "College Partnerships Co-Lead",
             "image":"anshuman_s.jpg",
             "order":4
-        },   
+        },               
+        {
+            "name":"Aradhya Vats",
+            "designation": "College Partnerships Co-Lead",
+            "image":"aradhya.jpg",
+            "order":4
+        },  
+        {
+            "name":"Himanshu Rathod",
+            "designation": "Creatives Lead",
+            "image":"himanshu_r.jpg",
+            "order":4
+        },        
         {
             "name":"Vandan Kumbhat",
             "designation": "IT & Web Lead",
@@ -105,7 +105,7 @@
         },
         {
             "name":"Meghna Zohar",
-            "designation": "Content Lead",
+            "designation": "Content Manager",
             "image":"meghna.jpeg",
             "order":4
         },
