@@ -62,6 +62,7 @@
         <li><a href='javascript:changeLanguage("English")' lang='en'><b>English</b></a></li>
         <li><a href='javascript:changeLanguage("Tamil")' lang='ta'>தமிழ்</a></li>
         <li><a href='javascript:changeLanguage("Marathi")' lang='mr'>मराठी</a></li>
+        <li><a href="./team.php" lang="en" class="team-btn">Team</a></li>
         <li><a href="#contact-us" lang="en" class="about-head-class">Contact Us</a></li>
         <!-- Dropdown Trigger 
         <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">भाषा |Language<i class="material-icons right">arrow_drop_down</i></a></li>
@@ -75,6 +76,7 @@
         <li><a href='javascript:changeLanguage("English")' lang='en'><b>English</b></a></li>
         <li><a href='javascript:changeLanguage("Tamil")' lang='ta'>தமிழ்</a></li>
         <li><a href='javascript:changeLanguage("Marathi")' lang='mr'>मराठी</a></li>
+        <li><a href="./team.php" lang="en" class="team-btn">Team</a></li>
         <li><a href="#contact-us" lang="en" class="about-head-class">Contact Us</a></li>
         <li style="padding-top:2%;">
             <a href="https://www.instagram.com/needplasma/" class="left s4" target="_blank"><img class="" alt="instagram" src="images/instagram.ico"></a>
@@ -112,9 +114,7 @@
                     <h5 id="reg-volhead">REGISTER AS A VOLUNTEER (JOIN US)</h5>
                     <p id="reg-volpara" class="center-align">You can motivate a recovered COVID-19 patient to donate plasma and save a COVID-19 patient. Your small step can help a person go back to their family.</p>
                     <!-- Modal Trigger -->
-                    <button data-target="volunteerPopup" class="waves-effect waves-light btn modal-trigger">
-                        <span id="reg-volbutton">Help Us</span>
-                    </button>               
+                    <a class="waves-effect waves-light btn" href='https://forms.gle/FGyztKourfqiRM2MA' target="_blank"><span id="vol-butjoin">Join Now</span></a>              
                 </div>
               </div>
         </div>
@@ -266,7 +266,7 @@
     </div>
     <div class="modal-footer">
       <a href="#!" class="modal-close waves-effect waves-grey btn-flat" id="vol-butclose">Close</a>
-      <a class="waves-effect waves-light btn" href='https://forms.gle/FGyztKourfqiRM2MA' target="_blank"><span id="vol-butjoin">Join Now</span></a>
+      <!--  -->
     </div>
   </div>
 
@@ -323,6 +323,7 @@ $( document ).ready(function() {
             xhr.overrideMimeType('application/json;charset=utf-8');
             }
         },
+        cache:false,
         dataType: 'json',
         success: function (data) {
             //Do stuff with the JSON data

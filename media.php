@@ -43,7 +43,7 @@ $team = json_decode($str, true)['team'];
     </style>
   </head>
 
-  <body class="grey lighten-4">
+  <body class="grey lighten-3">
 <!-- Dropdown Structure -->
 <!-- <ul id="dropdown1" class="dropdown-content">
     <li><a href='javascript:changeLanguage("Hindi")'>हिन्दी</a></li>
@@ -98,10 +98,24 @@ $team = json_decode($str, true)['team'];
   <br><hr><br>
   <div class="container" style="max-height: 700px;">
       <div class="row center-align" style="max-height: 700px;">
-      
             <div class="col m6 white custom-boxes" >
-            <a class="twitter-timeline" data-height="350" href="https://twitter.com/NeedPlasmaIndia?ref_src=twsrc%5Etfw">
-                Tweets by NeedPlasmaIndia</a>  
+                <h4>Media Coverage</h4>
+                <div class="white z-depth-2">
+                    <div><span class="left">Dainik Bhaskar</span><span class="right">29-APR-2021</span></div>
+                    <div>
+                        <h6><a href="https://www.bhaskar.com/db-original/news/someone-is-running-an-online-plasma-donation-with-a-job-while-someone-is-providing-oxygen-to-the-patients-through-crowd-funding-128452200.html">
+                        आज की पॉजिटिव खबर:कोई नौकरी के साथ ऑनलाइन प्लाज्मा डोनेशन की मुहिम चला रहा...</a></h6>
+                    </div>
+                </div>
+            </div>      
+            <div class="col m5 offset-m1 white custom-boxes" >
+                <div class=""><h4>Twitter<span class="right">
+                    <a href="https://twitter.com/NeedPlasmaIndia?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @NeedPlasmaIndia</a>
+                    </h4>
+                </div>
+                <a class="twitter-timeline" data-height="350" href="https://twitter.com/NeedPlasmaIndia?ref_src=twsrc%5Etfw">
+                    Tweets by NeedPlasmaIndia
+                </a>  
             </div>
         </div>
     </div>
@@ -113,10 +127,7 @@ $team = json_decode($str, true)['team'];
         <a class="grey-text text-lighten-4" href="#!"><span id="copyrightext">Copyright © 2021 NeedPlasma. All rights reserved</span></a>
         <br>Credits- <a href="https://www.freepik.com/vectors/people" class="white-text text-lighten-2">People vector created by pch.vector - www.freepik.com</a>
         <a href="https://www.freepik.com/vectors/abstract" class = "white-text text-lighten-2">Abstract vector created by macrovector - www.freepik.com</a>
-        <a href="https://www.freepik.com/vectors/heart" class = "white-text text-lighten-2" >Heart vector created by kreativkolors - www.freepik.com</a>
-        <button data-target="languageSelector" class=" modal-trigger" id="languageButton">
-            <span id="change-lang-footer">Change Language</span>
-        </button>     
+        <a href="https://www.freepik.com/vectors/heart" class = "white-text text-lighten-2" >Heart vector created by kreativkolors - www.freepik.com</a>    
     </div>
   </div>
 </footer>

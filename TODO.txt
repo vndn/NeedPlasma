@@ -1,9 +1,17 @@
 html lang
-em to %
 Basic SEO
 Dashboard of stats
-Hit counter better
+Hit counter better implemnation
+Parallex on index.php images
 Remove video from volunteer button
 ASG - But then we need an AMI or user data which can do the steps in deploymnet.txt
      (counter.txt will not exist, take care in deployment script, test once on http)
-     
+Ineractive - Myth Buster Quiz
+Geolocation data
+
+This weekend
+    Team and Media link to home
+    Standardise bnavbar in single require file
+    Quiz
+    Geolocation
+    Dasboard - Hits, geolocation

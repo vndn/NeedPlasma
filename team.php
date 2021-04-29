@@ -1,9 +1,19 @@
 <?php
+header("Cache-Control: no-cache, no-store, must-revalidate"); // HTTP 1.1.
+header("Pragma: no-cache"); // HTTP 1.0.
+header("Expires: 0"); // Proxies.
 #$str = file_get_contents('http://example.com/example.json/');
 $fname="team.json";
 $myfile = fopen( $fname, "r") or die("Could not open file");
 $str = fread($myfile,filesize($fname));
-$team = json_decode($str, true)['team']; 
+$team = json_decode($str, true)['team'];
+
+#Hit Counter simple
+$myfile = fopen("team_counter.txt", "a");
+$date = new DateTime();
+$txt = $date->format('Y-m-d H:i:s')."\n";
+fwrite($myfile,$txt);
+fclose($myfile);
 ?>
 
 <!DOCTYPE html>
@@ -97,7 +107,7 @@ $team = json_decode($str, true)['team'];
       
             <div class="col s6 m3 white custom-boxes">
                 <br>
-                <img src="images/team/<?php echo $member["image"]?>" width="50%" alt="team-member" class="circle center z-depth-4">
+                <img src="images/team/<?php echo $member["image"]?>?v=1234" width="50%" alt="team-member" class="circle center z-depth-4">
                 <h6 class="member-name"><?php echo $member["name"]?></h6>
                 <p><?php echo $member["designation"]?></p>
             </div>
@@ -111,10 +121,7 @@ $team = json_decode($str, true)['team'];
         <a class="grey-text text-lighten-4" href="#!"><span id="copyrightext">Copyright © 2021 NeedPlasma. All rights reserved</span></a>
         <br>Credits- <a href="https://www.freepik.com/vectors/people" class="white-text text-lighten-2">People vector created by pch.vector - www.freepik.com</a>
         <a href="https://www.freepik.com/vectors/abstract" class = "white-text text-lighten-2">Abstract vector created by macrovector - www.freepik.com</a>
-        <a href="https://www.freepik.com/vectors/heart" class = "white-text text-lighten-2" >Heart vector created by kreativkolors - www.freepik.com</a>
-        <button data-target="languageSelector" class=" modal-trigger" id="languageButton">
-            <span id="change-lang-footer">Change Language</span>
-        </button>     
+        <a href="https://www.freepik.com/vectors/heart" class = "white-text text-lighten-2" >Heart vector created by kreativkolors - www.freepik.com</a>   
     </div>
   </div>
 </footer>
