@@ -1,0 +1,51 @@
+html lang
+Basic SEO
+Dashboard of stats
+Hit counter better implemnation
+Parallex on index.php images
+Remove video from volunteer button
+ASG - But then we need an AMI or user data which can do the steps in deploymnet.txt
+     (counter.txt will not exist, take care in deployment script, test once on http)
+Ineractive - Myth Buster Quiz
+Geolocation data
+
+This weekend
+     Social references section
+     Security enhancements
+     Navbar for media page - Non collapsible - Articles, Twitter, Images
+     Priority - Button track
+     Common row counter
+     Stat processing URLs with basic secret GET authentication
+     EC2 with role for safe comms
+     Python from PHP if required 
+     Google formms inside the website so people stay
+     Ensure deployment strategy takes care of all generated files, permissions etc
+     Move all these counters and other files out of public access
+     
+     Google analytics UTM for refer tracking
+          Yourself track source, device and ....whatever can be captured    
+     Referral links 
+          Refer preprocess
+          Raw hit counter
+          Team engagement booster by having their own refer links
+          Hourly stats are also easy now
+               Update the hr count (more granular is anyways stored in rawdata)
+          craterefer - secret=$val+hr, refer=$val   
+               Only allow n refers per minute/day from an IP
+               Meta - start, campaign type (dropdown), other details
+               Check if exists
+               Be creative [ any set of numbers, letters (english), -, underscore should work]
+          /refer- Allow people to create referral link with threshold [ will look bad]
+               So do not process people refers upfront. NO
+               How do we ensure we are not spammed. We are opening up to the world, we need limits
+               Throttle with IP and let user request more refers or tell them to come back after n units of time
+          /myrefer
+               Search by refer
+     
+     Sessions
+     PHP framework - Streamlining
+    Team and Media link to home
+    Standardise bnavbar in single require file
+    Quiz
+    Dasboard - Hits, geolocation
+    Need more healthy servers

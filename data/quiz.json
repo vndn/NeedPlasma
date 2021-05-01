@@ -1,0 +1,14 @@
+{
+	"QUESTIONS":[
+		{
+			"id": 1,
+			"question":"Can you guess who is left-handed and why?",
+			"type":"MCQ",
+			"image":"puzzle_image1.png",
+			"options":["Person 1","Person 2","Person 3","Person 4","Person 5"],
+			"answer":5,
+			"category":"PUZZLE"
+		}],
+	"CATEGORIES": ["SPORTS","PUZZLE","ENTERTAINMENT","GEOGRAPHY","HEALTH"]
+}
+
