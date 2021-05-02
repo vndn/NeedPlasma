@@ -43,6 +43,7 @@
                     <li><a href='javascript:changeLanguage("Tamil")' lang='ta'>தமிழ்</a></li>
                     <li><a href='javascript:changeLanguage("Marathi")' lang='mr'>मराठी</a></li>
                     <?php } ?>
+                    <li><a href="./" lang="en" class="team-btn">Home</a></li>
                     <li><a href="./team.php" lang="en" class="team-btn">Team</a></li>
                     <li><a href="./media.php" lang="en" class="team-btn">Media</a></li>
                     <?php if ($GLOBALS['page']=='home') {  ?>
@@ -62,6 +63,7 @@
         <li><a href='javascript:changeLanguage("Tamil")' lang='ta'>தமிழ்</a></li>
         <li><a href='javascript:changeLanguage("Marathi")' lang='mr'>मराठी</a></li>
         <?php }  ?>
+        <li><a href="./" lang="en" class="team-btn">Home</a></li>
         <li><a href="./team.php" lang="en" class="team-btn">Team</a></li>
         <li><a href="./media.php" lang="en" class="team-btn">Media</a></li>
         <?php if ($GLOBALS['page']=='home') {  ?>
