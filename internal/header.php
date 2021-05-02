@@ -44,8 +44,9 @@
                     <li><a href='javascript:changeLanguage("Marathi")' lang='mr'>मराठी</a></li>
                     <?php } ?>
                     <li><a href="./team.php" lang="en" class="team-btn">Team</a></li>
+                    <li><a href="./media.php" lang="en" class="team-btn">Media</a></li>
                     <?php if ($GLOBALS['page']=='home') {  ?>
-                    <li><a href="#contact-us" lang="en" class="about-head-class">Contact Us</a></li>
+                    <li><a href="#contact-us" lang="en" class="about-head-class">Reach Us</a></li>
                     <?php }  ?>
                     <!-- Dropdown Trigger 
                     <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">भाषा |Language<i class="material-icons right">arrow_drop_down</i></a></li>
@@ -62,6 +63,7 @@
         <li><a href='javascript:changeLanguage("Marathi")' lang='mr'>मराठी</a></li>
         <?php }  ?>
         <li><a href="./team.php" lang="en" class="team-btn">Team</a></li>
+        <li><a href="./media.php" lang="en" class="team-btn">Media</a></li>
         <?php if ($GLOBALS['page']=='home') {  ?>
         <li><a href="#contact-us" lang="en" class="about-head-class">Contact Us</a></li>
         <?php } ?>

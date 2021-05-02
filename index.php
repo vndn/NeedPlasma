@@ -1,4 +1,7 @@
 <?php
+include('internal/config.php');
+include('internal/sqs_helper.php');
+
 $GLOBALS['page'] = 'home';
 
 $refer="None";
@@ -14,10 +17,8 @@ if(isset($_GET['refer'])) {
 
 #Hit Counter simple
 $date = new DateTime();
-$myfile = fopen("counters/counter_v2.txt", "a+");
-$txt = "timestamp=".$date->format('Y-m-d H:i:s').",refer=".$refer."\n";
-fwrite($myfile,$txt);
-fclose($myfile);
+$msg = "url=/,timestamp=".$date->format('Y-m-d H:i:s').",refer=".$refer."\n";
+sendSQSMessage($AWS[$ENV]['HitCounterQueueURL'],$msg);
 
 include('internal/header.php');
 

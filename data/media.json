@@ -1,6 +1,12 @@
 {
     "ARTICLES": [
         {
+            "agency":"Times of India",
+            "displayURL":"Delhi: Portals open doorway for twain to meet, make ‘give-&-take' possible",
+            "URL": "https://timesofindia.indiatimes.com/city/delhi/portals-open-doorway-for-twain-to-meet-make-give-take-possible/articleshow/76843376.cms",
+            "date": "08-JULY-2020"
+        },        
+        {
             "agency":"Dainik Bhaskar",
             "displayURL":"आज की पॉजिटिव खबर:कोई नौकरी के साथ ऑनलाइन प्लाज्मा डोनेशन की मुहिम चला रहा..",
             "URL": "https://www.bhaskar.com/db-original/news/someone-is-running-an-online-plasma-donation-with-a-job-while-someone-is-providing-oxygen-to-the-patients-through-crowd-funding-128452200.html",
@@ -14,12 +20,22 @@
         },       
         {
             "agency":"Times Now News",
-            "displayURL":"IM Indore steps up to help, to provide food and other items to patients and police under its ISR initiate",
+            "displayURL":"IIM Indore steps up to help, to provide food and other items to patients and police under its ISR initiate",
             "URL": "https://www.timesnownews.com/education/article/iim-indore-steps-up-to-help-to-provide-food-and-other-items-to-patients-and-police-under-its-isr-initiate/750011",
             "date": "28-APR-2021"
-        }                
+        }                        
     ],
     "GALLERY": [
+        {
+            "image": "media_6.png",
+            "alt": "Dainik Bhaskar",
+            "url": "images/media/media_6.png"
+        },          
+        {
+            "image": "media_img5.jpeg",
+            "alt": "Dainik Bhaskar",
+            "url": "images/media/media_img5.jpeg"
+        },        
         {
             "image": "media_img1.jpeg",
             "alt": "Free Press Journal Media Coverage",
