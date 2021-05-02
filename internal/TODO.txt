@@ -13,12 +13,12 @@ This weekend
      Social references section
      Security enhancements
      Navbar for media page - Non collapsible - Articles, Twitter, Images
-     Priority - Button track
+     1. Priority - Button tracker
      Common row counter
      Stat processing URLs with basic secret GET authentication
      EC2 with role for safe comms
      Python from PHP if required 
-     Google formms inside the website so people stay
+     2. Google formms inside the website so people stay
      Ensure deployment strategy takes care of all generated files, permissions etc
      Move all these counters and other files out of public access
      
@@ -30,7 +30,7 @@ This weekend
           Team engagement booster by having their own refer links
           Hourly stats are also easy now
                Update the hr count (more granular is anyways stored in rawdata)
-          craterefer - secret=$val+hr, refer=$val   
+          createrefer - secret=$val+hr, refer=$val   
                Only allow n refers per minute/day from an IP
                Meta - start, campaign type (dropdown), other details
                Check if exists
