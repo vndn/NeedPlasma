@@ -57,5 +57,12 @@ include('internal/header.php');
 	include('internal/footer.php');
 ?>
 
+<script>
+$( document ).ready(function() {
+    $('.sidenav').sidenav();
+    $(".dropdown-trigger").dropdown();     
+});
+</script>
+
 </body>
 </html>

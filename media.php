@@ -77,7 +77,8 @@ fclose($myfile);
 
 <script>
 $( document ).ready(function() {
-    $('.parallax').parallax();
+    $('.sidenav').sidenav();
+    $(".dropdown-trigger").dropdown();     
 });
 </script>
 </body>
