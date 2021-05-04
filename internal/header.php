@@ -1,11 +1,22 @@
+<?php
+header("Cache-Control: no-cache, no-store, must-revalidate"); // HTTP 1.1.
+header("Pragma: no-cache"); // HTTP 1.0.
+header("Expires: 0"); // Proxies.
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta http-equiv="cache-control" content="no-cache, must-revalidate, post-check=0, pre-check=0" />
+    <meta http-equiv="cache-control" content="max-age=0" />
+    <meta http-equiv="expires" content="0" />
+    <meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
+    <meta http-equiv="pragma" content="no-cache" />      
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Import materialize.css-->
-    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen"/>
-    <link type="text/css" rel="stylesheet" href="css/style.css"/>
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css?v=432"  media="screen"/>
+    <link type="text/css" rel="stylesheet" href="css/style.css?v=987"/>
     <link rel="shortcut icon" href="images/favicon.ico">
     <title>Save Lives by donating Plasma - Act now</title>
     <!--Let browser know website is optimized for mobile-->
@@ -14,12 +25,8 @@
 
   </head>
 
-  <body>
-<!-- Dropdown Structure -->
-<!-- <ul id="dropdown1" class="dropdown-content">
-    <li><a href='javascript:changeLanguage("Hindi")'>हिन्दी</a></li>
-    <li><a href='javascript:changeLanguage("English")'>English</a></li>
-  </ul> -->
+<body>
+
 <header>
     
     <div class="navbar-fixed">

@@ -1,6 +1,6 @@
 <?php
 include('internal/config.php');
-include('internal/sqs_helper.php');
+include('internal/utils.php');
 
 $GLOBALS['page'] = 'home';
 
@@ -15,12 +15,10 @@ if(isset($_GET['refer'])) {
 #2 approaches - 1 [current] = Update only known refers
 #    2. Refer
 
-#Hit Counter simple
-$myfile = fopen("counters/counter_v2.txt", "a+");
+
 $date = new DateTime();
-$txt = "timestamp=".$date->format('Y-m-d H:i:s').",refer=".$refer."\n";
-fwrite($myfile,$txt);
-fclose($myfile);
+$msg = "timestamp=".$date->format('Y-m-d H:i:s').",refer=".$refer."\n";
+counterFileBased("counters/counter_v2.txt",$msg);
 /*
 $date = new DateTime();
 $msg = "url=/,timestamp=".$date->format('Y-m-d H:i:s').",refer=".$refer."\n";
@@ -45,7 +43,7 @@ include('internal/header.php');
                 <div class="col m4 center-align">    
                     <h5 id="reg-donatehead">WANT TO DONATE PLASMA?</h5>
                     <p id="reg-donatepara" class="center-align">Recovered or quarantined patients of COVID-19 who are willing to donate</p>
-                    <a id="donor-btn" class="waves-effect waves-light btn trackable-btn" href='https://forms.gle/mTp6J3sGRHucxqra7' target="_blank"><span id="donate-plasma-btn">Donate Plasma</span></a><br><br>
+                    <a id="donor-btn" class="waves-effect waves-light btn trackable-btn pulse" href="https://forms.gle/mTp6J3sGRHucxqra7" target="_blank">Donate Plasma<span class="material-icons">favorite</span></a><br><br>
                 </div>
                 <div class="col m4 center-align">    
                     <h5 id="reg-needhead">YOU NEED THE THERAPY (LOOKING FOR PLASMA)</h5>
@@ -55,8 +53,7 @@ include('internal/header.php');
                 <div class="col m4 center-align">    
                     <h5 id="reg-volhead">REGISTER AS A VOLUNTEER (JOIN US)</h5>
                     <p id="reg-volpara" class="center-align">You can motivate a recovered COVID-19 patient to donate plasma and save a COVID-19 patient. Your small step can help a person go back to their family.</p>
-                    <!-- Modal Trigger -->
-                    <a id="volunteer-btn" class="waves-effect waves-light btn trackable-btn" href='https://forms.gle/FGyztKourfqiRM2MA' target="_blank"><span id="vol-butjoin">Join Now</span></a>              
+                    <a id="volunteer-btn" class="waves-effect waves-light btn trackable-btn" href='https://forms.gle/FGyztKourfqiRM2MA' target="_blank"><span id="vol-butjoin">Join Now</span></a>
                 </div>
               </div>
         </div>

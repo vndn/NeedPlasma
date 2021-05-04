@@ -110,6 +110,18 @@
             "order":4
         },
         {
+            "name":"Vaibhav Gupta",
+            "designation": "",
+            "image":"vaibhav.jpg",
+            "order":4
+        },      
+        {
+            "name":"Harshit Gupta",
+            "designation": "",
+            "image":"harshit.jpg",
+            "order":4
+        },              
+        {
             "name":"Vandit Sawansukha",
             "designation": "Marketing and PR Lead",
             "image":"vandit.jpg",

@@ -35,10 +35,8 @@
 					</div>
 					<div class="card-action">
 					<?php if ( $ques["type"]=='MCQ') { ?>
-						<?php foreach ($ques["options"] as $p=>$option) { $q=$p+1; ?>
-						<?php if ( $p%2 == 0) { ?>
-						<div class="row">
-						<?php } ?>
+						<?php foreach ($ques["options"] as $p=>$option) { $q=$p+1; #echo $q; ?>
+						<?php if ( $p%2 == 0) { echo "<div class='row'>";} ?>
 							<div class="col s12 m5 offset-m1">
 								<p>
 									<label>
@@ -47,11 +45,9 @@
 									</label>
 								</p>
 							</div>
-						<?php if ( $q%2 == 0 or $q=count($ques["options"])-1); {  ?>
-						</div>
-						<?php } ?>
+						<?php if ( $q%2 == 0 or $q==count($ques["options"])+1 ); { echo "</div>";} ?>
+						
 					    <?php } ?>
-                    </div>
                     <?php } ?>
 				</div>
 			</div>
