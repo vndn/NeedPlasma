@@ -1,0 +1,142 @@
+{
+	"Chandigarh": {
+		"donors": 200,
+		"beneficiaries": 10
+	},	
+	"Delhi": {
+		"donors": 350,
+		"beneficiaries": 10
+	},	
+	"Himachal Pradesh": {
+		"donors": 12,
+		"beneficiaries": 10
+	},	
+	"Haryana": {
+		"donors": 234,
+		"beneficiaries": 10
+	},	
+	"Jammu and Kashmir": {
+		"donors": 150,
+		"beneficiaries": 10
+	},	
+	"Andhra Pradesh": {
+		"donors": 450,
+		"beneficiaries": 10
+	},	
+	"Kerala": {
+		"donors": 600,
+		"beneficiaries": 10
+	},	
+	"Lakshadweep": {
+		"donors": 25,
+		"beneficiaries": 10
+	},	
+	"Orissa": {
+		"donors": 300,
+		"beneficiaries": 10
+	},	
+	"Dadra and Nagar Haveli": {
+		"donors": 26,
+		"beneficiaries": 10
+	},	
+	"Karnataka": {
+		"donors": 700,
+		"beneficiaries": 10
+	},	
+	"Maharashtra": {
+		"donors": 1200,
+		"beneficiaries": 10
+	},	
+	"Andaman and Nicobar": {
+		"donors": 50,
+		"beneficiaries": 10
+	},	
+	"Assam": {
+		"donors": 100,
+		"beneficiaries": 10
+	},	
+	"Manipur": {
+		"donors": 80,
+		"beneficiaries": 10
+	},	
+	"Nagaland": {
+		"donors": 70,
+		"beneficiaries": 10
+	},	
+	"Meghalaya": {
+		"donors": 80,
+		"beneficiaries": 10
+	},	
+	"Punjab": {
+		"donors": 200,
+		"beneficiaries": 10
+	},	
+	"Rajasthan": {
+		"donors": 250,
+		"beneficiaries": 10
+	},	
+	"Uttar Pradesh": {
+		"donors": 400,
+		"beneficiaries": 10
+	},	
+	"Uttaranchal": {
+		"donors": 300,
+		"beneficiaries": 10
+	},	
+	"Jharkhand": {
+		"donors": 300,
+		"beneficiaries": 10
+	},	
+	"West Bengal": {
+		"donors": 800,
+		"beneficiaries": 10
+	},	
+	"Bihar": {
+		"donors": 400,
+		"beneficiaries": 10
+	},	
+	"Sikkim": {
+		"donors": 200,
+		"beneficiaries": 10
+	},	
+	"Chhattisgarh": {
+		"donors": 250,
+		"beneficiaries": 10
+	},	
+	"Madhya Pradesh": {
+		"donors": 380,
+		"beneficiaries": 10
+	},	
+	"Puducherry": {
+		"donors": 50,
+		"beneficiaries": 10
+	},	
+	"Tamil Nadu": {
+		"donors": 850,
+		"beneficiaries": 10
+	},	
+	"Gujarat": {
+		"donors": 100,
+		"beneficiaries": 10
+	},	
+	"Goa": {
+		"donors": 100,
+		"beneficiaries": 10
+	},	
+	"Arunachal Pradesh": {
+		"donors": 250,
+		"beneficiaries": 10
+	},	
+	"Mizoram": {
+		"donors": 260,
+		"beneficiaries": 10
+	},	
+	"Tripura": {
+		"donors": 280,
+		"beneficiaries": 10
+	},	
+	"Daman and Diu": {
+		"donors": 20
+		"beneficiaries": 10
+	},	
+}

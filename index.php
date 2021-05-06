@@ -57,7 +57,35 @@ include('internal/header.php');
                 </div>
               </div>
         </div>
-        <hr>        
+        <hr>
+        <div class="container">
+            <h4 class='center-align' id="reach-head">OUR REACH</h4>
+            <div class="row center-align">
+                <br><br>
+                <div class="col m6">
+                    <div id="map">
+                        <div id="select"></div>
+                    </div>
+                </div>
+                <div class="col m2"></div>
+                <div class="col m4">
+
+                      <div id="reach-body">
+                        <div>
+                            We are connecting the people who require plasma
+                            to their nearest donors across India. Hover or click the states
+                            to see  the number of people
+                            who have been connected to one of the donors registered
+                            in this website.
+                        </div>
+                        <br>
+                        <div>Total Beneficiaries: 1000+</div>
+                      </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="divider"></div>
         <div class="container">
             <h4 class='center-align' id="sit-head">THE SITUATION</h4>
             <div class="row center-align ">
@@ -314,6 +342,21 @@ function sendButtonClickData(){
 }
 
 </script>
+
+<script src="//d3js.org/d3.v3.min.js" charset="utf-8"></script>
+<script src="//d3js.org/d3-queue.v3.min.js"></script>
+<script src="//d3js.org/topojson.v1.min.js"></script>
+<script src="https://d3js.org/d3-array.v2.min.js"></script>
+<script src="https://d3js.org/d3-color.v2.min.js"></script>
+<script src="https://d3js.org/d3-format.v2.min.js"></script>
+<script src="https://d3js.org/d3-interpolate.v2.min.js"></script>
+<script src="https://d3js.org/d3-time.v2.min.js"></script>
+<script src="https://d3js.org/d3-time-format.v3.min.js"></script>
+<script src="https://d3js.org/d3-scale.v3.min.js"></script>
+<script src="https://d3js.org/d3-scale-chromatic.v2.min.js"></script>
+<script type="text/javascript" src="state_donor.js"></script>
+<script type="text/javascript" src="map/map_india.js"></script>
+
 
   </body>
 </html>
