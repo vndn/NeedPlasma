@@ -9,7 +9,7 @@
     var len = (window.visualViewport.height > window.visualViewport.width ?
       window.visualViewport.width : window.visualViewport.height) - 50;
     var map = stateMap(states.features).width(len)
-    .height(len-100).scale(len);
+    .height(len-100).scale(len+(0.1*len));
     d3.select("#map").call(map);
   });
 }());

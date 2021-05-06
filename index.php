@@ -69,7 +69,7 @@ include('internal/header.php');
                 </div>
                 <div class="col m2"></div>
                 <div class="col m4">
-
+                      <br>
                       <div id="reach-body">
                         <div>
                             We are connecting the people who require plasma
@@ -79,7 +79,7 @@ include('internal/header.php');
                             in this website.
                         </div>
                         <br>
-                        <div>Total Beneficiaries: 1000+</div>
+                        <div>Total Beneficiaries: <span style="color: red">1000+</span></div>
                       </div>
 
                 </div>
