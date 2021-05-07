@@ -15,7 +15,6 @@ This weekend
      Social references section
      Security enhancements
      Navbar for media page - Non collapsible - Articles, Twitter, Images
-     1. Priority - Button tracker
      Common row counter
      Stat processing URLs with basic secret GET authentication
      EC2 with role for safe comms

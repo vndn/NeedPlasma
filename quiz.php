@@ -37,7 +37,7 @@
 					<?php if ( $ques["type"]=='MCQ') { ?>
 						<?php foreach ($ques["options"] as $p=>$option) { $q=$p+1; #echo $q; ?>
 						<?php if ( $p%2 == 0) { echo "<div class='row'>";} ?>
-							<div class="col s12 m5 offset-m1">
+							<div class="col s12 m6">
 								<p>
 									<label>
 									<input name="<?php echo $ques["id"]; ?>" type="radio" value="<?php echo $option; ?>" class="with-gap" />
@@ -75,7 +75,7 @@
 	</div>
 </main>
 <?php
-	include('footer.php');
+	include('internal/footer.php');
 ?>
 <script>
 	var bonus_limit=300;
