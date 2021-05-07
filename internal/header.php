@@ -15,8 +15,8 @@ header("Expires: 0"); // Proxies.
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Import materialize.css-->
-    <link type="text/css" rel="stylesheet" href="css/materialize.min.css?v=432"  media="screen"/>
-    <link type="text/css" rel="stylesheet" href="css/style.css?v=9877"/>
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css?v=47232"  media="screen"/>
+    <link type="text/css" rel="stylesheet" href="css/style.css?v=987617"/>
     <link rel="shortcut icon" href="images/favicon.ico">
     <title>Save Lives by donating Plasma - Act now</title>
     <!--Let browser know website is optimized for mobile-->
