@@ -85,7 +85,7 @@ include('internal/header.php');
                 </div>
             </div>
         </div>
-        <div class="divider"></div>
+        <hr>
         <div class="container">
             <h4 class='center-align' id="sit-head">THE SITUATION</h4>
             <div class="row center-align ">
