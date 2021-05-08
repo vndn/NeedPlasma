@@ -343,17 +343,8 @@ function sendButtonClickData(){
 
 </script>
 
-<script src="//d3js.org/d3.v3.min.js" charset="utf-8"></script>
-<script src="//d3js.org/d3-queue.v3.min.js"></script>
+<script src="//d3js.org/d3.v6.min.js" charset="utf-8"></script>
 <script src="//d3js.org/topojson.v1.min.js"></script>
-<script src="https://d3js.org/d3-array.v2.min.js"></script>
-<script src="https://d3js.org/d3-color.v2.min.js"></script>
-<script src="https://d3js.org/d3-format.v2.min.js"></script>
-<script src="https://d3js.org/d3-interpolate.v2.min.js"></script>
-<script src="https://d3js.org/d3-time.v2.min.js"></script>
-<script src="https://d3js.org/d3-time-format.v3.min.js"></script>
-<script src="https://d3js.org/d3-scale.v3.min.js"></script>
-<script src="https://d3js.org/d3-scale-chromatic.v2.min.js"></script>
 <script type="text/javascript" src="state_donor.js"></script>
 <script type="text/javascript" src="map/map_india.js"></script>
 

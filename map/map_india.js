@@ -13,12 +13,12 @@ const stateMap = (states) => {
         attr('width', width).
         attr('height', height)
 
-      var projection = d3.geo.mercator().
+      var projection = d3.geoMercator().
         center([83, 23]).
         scale(scale).
         translate([width / 2, height / 2])
 
-      var path = d3.geo.path().projection(projection)
+      var path = d3.geoPath(projection);
       var selectState = svg.selectAll('g').
         data(states).
         enter().
@@ -49,19 +49,18 @@ const stateMap = (states) => {
         //.style("fill", function(d) { return color[Math.floor(Math.random() * 5)]; })
         .attr('d', path).
         style('opacity', 0.8).
-        on('mouseenter', function (d, i) {
+        on('mouseenter', (mouseEvent, d) => {
           d3.select(this).transition().duration(200).style('opacity', 1)
           tooltip_div.transition().duration(200).style('opacity', 1)
           tooltip_div.html(d.properties.name + '<br>beneficiaries : ' +
             state_donor[d.properties.name].beneficiaries).
-            style('left', (d3.event.pageX) + 'px').
-            style('top', (d3.event.pageY - 30) + 'px')
+            style('left', (mouseEvent.pageX) + 'px').
+            style('top', (mouseEvent.pageY - 30) + 'px');
 
         }).
-        on('mouseleave', function (d, i) {
-          d3.select(this).transition().duration(300).style('opacity', 0.8)
-          console.log(d)
-          tooltip_div.transition().duration(300).style('opacity', 0)
+        on('mouseleave', function (mouseEvent, d) {
+          d3.select(this).transition().duration(300).style('opacity', 0.8);
+          tooltip_div.transition().duration(300).style('opacity', 0);
         })
     })
   }
@@ -86,8 +85,8 @@ const stateMap = (states) => {
 }
 
 const initializeMap = () => {
-  d3.queue().defer(d3.json, 'india.geo.json').await(function (error, topoMap) {
-    if (error) throw error
+
+  d3.json('india.geo.json').then(topoMap => {
     var states = topojson.feature(topoMap, topoMap.objects.India_map)
 
     // Map render
