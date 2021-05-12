@@ -47,19 +47,19 @@ include('internal/header.php');
                 <div class="col m4 s12 center-align">    
                     <h5 id="reg-donatehead">WANT TO DONATE PLASMA?</h5>
                     <p id="reg-donatepara" class="center-align">Recovered or quarantined patients of COVID-19 who are willing to donate</p>
-                    <!-- <a id="donor-btn" class="waves-effect waves-light btn trackable-btn pulse" href="https://forms.gle/mTp6J3sGRHucxqra7" target="_blank">Donate Plasma<span class="material-icons">favorite</span></a><br><br> -->
-                    <a id="donor-btn" class="waves-effect waves-light btn trackable-btn pulse" href="register.php?role=donor">Donate Plasma<span class="material-icons">favorite</span></a><br><br>
+                    <a id="donor-btn" class="green waves-effect waves-light btn trackable-btn pulse" href="https://forms.gle/mTp6J3sGRHucxqra7" target="_blank">Donate Plasma<span class="material-icons">favorite</span></a><br><br>
+                    <!-- <a id="donor-btn" class="waves-effect waves-light btn trackable-btn pulse" href="register.php?role=donor">Donate Plasma<span class="material-icons">favorite</span></a><br><br> -->
                 </div>
                 <div class="col m4 s12 center-align">    
                     <h5 id="reg-needhead">YOU NEED THE THERAPY (LOOKING FOR PLASMA)</h5>
                     <p id="reg-needpara" class="center-align">If you are looking out for a donor, register here and we will try to connect with a donor</p>
-                    <a id="patient-btn" class="waves-effect waves-light btn trackable-btn" href='https://forms.gle/Fp1MeBwD5gd5nNUNA' target="_blank"><span id="reg-button">REGISTER HERE</span></a><br><br>
+                    <a id="patient-btn" class="red waves-effect waves-light btn trackable-btn" href='https://forms.gle/Fp1MeBwD5gd5nNUNA' target="_blank"><span id="reg-button">REGISTER HERE</span></a><br><br>
                 </div>
                 <div class="col m4 s12 center-align">    
                     <h5 id="reg-volhead">REGISTER AS A VOLUNTEER (JOIN US)</h5>
                     <p id="reg-volpara" class="center-align">You can motivate a recovered COVID-19 patient to donate plasma and save a COVID-19 patient. Your small step can help a person go back to their family.</p>
-                    <!-- <a id="volunteer-btn" class="waves-effect waves-light btn trackable-btn" href='https://forms.gle/FGyztKourfqiRM2MA' target="_blank"><span id="vol-butjoin">Join Now</span></a> -->
-                    <a id="volunteer-btn" class="waves-effect waves-light btn trackable-btn" href="register.php?role=volunteer"><span id="vol-butjoin">Join Now</span></a>
+                    <a id="volunteer-btn" class="waves-effect waves-light btn trackable-btn" href='https://forms.gle/FGyztKourfqiRM2MA' target="_blank"><span id="vol-butjoin">Join Now</span></a>
+                    <!-- <a id="volunteer-btn" class="waves-effect waves-light btn trackable-btn" href="register.php?role=volunteer"><span id="vol-butjoin">Join Now</span></a> -->
                 </div>
               </div>
         </div>
@@ -134,7 +134,7 @@ include('internal/header.php');
             <h4 class='center-align donate-class-head'><b>WHO CAN DONATE</b></h4>
             <div class="row center-align">
                 <br><br>
-                <div class="col m4 ossfet-m1"> 
+                <div class="col m6 s12"> 
                     <img src="images/thumbs_up.png" height="100em" alt="thums-up">
                     <h5 class="donate-class-canhead">CAN DONATE</h5>
                     <p>
@@ -143,7 +143,7 @@ include('internal/header.php');
                         <span class="donate-class-canp3">Between 18-60 years</span><br>
                     </p>
                 </div>                
-                <div class="col m4 offset-m3">
+                <div class="col m6 s12">
                     <img src="images/thumbs_down.png" height="100em" alt="thums-down">
                     <h5 class="donate-class-canthead">CANNOT DONATE DONATE</h5>
                     <p>

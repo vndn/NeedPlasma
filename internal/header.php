@@ -32,7 +32,7 @@ header("Expires: 0"); // Proxies.
     
     <div class="navbar-fixed">
         <nav>
-            <div class="nav-wrapper teal lighten-1">
+            <div class="nav-wrapper deep-orange lighten-1">
                 <a href="#!" class="brand-logo"><img src="images/needplasmalogo.webp" height="30" alt=""></a>
                 <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
                 <ul class="right hide-on-med-and-down">
@@ -41,15 +41,15 @@ header("Expires: 0"); // Proxies.
                         <img class="" src="images/instagram.ico" alt="instagram link"></a></li>
                     <li><a href="https://twitter.com/NeedPlasmaIndia" target="_blank" class="right s4 social-links-desktop">
                         <img class="" src="images/twitter.ico" alt="twitter"></a></li>
-                    <li><a href="https://www.youtube.com/channel/UC2nLg5OkK6RAGahPG52HYsw" target="_blank" class="right s4 social-links-desktop">
-                        <img class="" src="images/youtube.png" alt="youtube link"></a></li>
+                    <!-- <li><a href="https://www.youtube.com/channel/UC2nLg5OkK6RAGahPG52HYsw" target="_blank" class="right s4 social-links-desktop">
+                        <img class="" src="images/youtube.png" alt="youtube link"></a></li> -->
                     <li><a href='mailto:info@needplasma.in' target="_blank" class="right s4 social-links-desktop">
                         <span id="email-btn"><img src="images/email.png" height="30px"></span></a></li>
                     <?php if ($GLOBALS['page']=='home') {  ?>
-                    <li class="teal lighten-2"><a href='javascript:changeLanguage("Hindi")' lang='ta'>हिन्दी</a></li>
-                    <li class="teal lighten-2"><a href='javascript:changeLanguage("English")' lang='en'><b>English</b></a></li>
-                    <li class="teal lighten-2"><a href='javascript:changeLanguage("Tamil")' lang='ta'>தமிழ்</a></li>
-                    <li class="teal lighten-2"><a href='javascript:changeLanguage("Marathi")' lang='mr'>मराठी</a></li>
+                    <li class="deep-orange lighten-2"><a href='javascript:changeLanguage("Hindi")' lang='ta'>हिन्दी</a></li>
+                    <li class="deep-orange lighten-2"><a href='javascript:changeLanguage("English")' lang='en'><b>English</b></a></li>
+                    <li class="deep-orange lighten-2"><a href='javascript:changeLanguage("Tamil")' lang='ta'>தமிழ்</a></li>
+                    <li class="deep-orange lighten-2"><a href='javascript:changeLanguage("Marathi")' lang='mr'>मराठी</a></li>
                     <?php } ?>
                     <li><a href="./" lang="en" class="team-btn">Home</a></li>
                     <li><a href="./team.php" lang="en" class="team-btn">Team</a></li>
@@ -83,7 +83,7 @@ header("Expires: 0"); // Proxies.
         </li>
         <li>
             <a href='mailto:info@needplasma.in' class="left s4" target="_blank"> <img alt="email" height="30px" src="images/email.png"></a>
-            <a style="padding-left: 9%;" href="https://www.youtube.com/channel/UC2nLg5OkK6RAGahPG52HYsw" class="center s4" target="_blank"> <img alt="youtube" class="" src="images/youtube.png"></a>
+            <!-- <a style="padding-left: 9%;" href="https://www.youtube.com/channel/UC2nLg5OkK6RAGahPG52HYsw" class="center s4" target="_blank"> <img alt="youtube" class="" src="images/youtube.png"></a> -->
         </li>          
     </ul>
 </header>
