@@ -17,7 +17,7 @@ header("Expires: 0"); // Proxies.
     <!--Import materialize.css-->
     <link type="text/css" rel="stylesheet" href="css/materialize.min.css?v=47232"  media="screen"/>
     <link type="text/css" rel="stylesheet" href="css/style.css?v=987617"/>
-    <link type="text/css" rel="stylesheet" href="css/chat.css?v=987617"/>
+    <!-- <link type="text/css" rel="stylesheet" href="css/chat.css?v=987617"/> -->
     <link rel="shortcut icon" href="images/favicon.ico">
     <title>Save Lives by donating Plasma - Act now</title>
     <!--Let browser know website is optimized for mobile-->

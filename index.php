@@ -5,12 +5,16 @@ include('internal/utils.php');
 $GLOBALS['page'] = 'home';
 
 $refer="None";
-if(isset($_GET['refer'])) {
-  $refer = preg_replace('/[^-a-zA-Z0-9_]/', '', $_GET['refer']);
-  $refer = str_replace(",","",$refer); #Do we even need this? Or preg_repalce() takes care of it
-  $refer = strtolower($refer);
+$refer_keys = array("refer","invite");
+foreach ($refer_keys as $key) {
+    if ( array_key_exists($key, $_GET) ) {
+        $refer = preg_replace('/[^-a-zA-Z0-9_]/', '', $_GET[$key]);
+        $refer = str_replace(",","",$refer); #Do we even need this? Or preg_repalce() takes care of it
+        $refer = strtolower($refer);
+        break;
+    }
 }
-
+$GLOBALS['refer']=$refer;
 #Update known refers count, pre analytics on hit data
 #2 approaches - 1 [current] = Update only known refers
 #    2. Refer
@@ -40,20 +44,22 @@ include('internal/header.php');
         <div class="container">
             <div class="row center-align">
                 <br><br>
-                <div class="col m4 center-align">    
+                <div class="col m4 s12 center-align">    
                     <h5 id="reg-donatehead">WANT TO DONATE PLASMA?</h5>
                     <p id="reg-donatepara" class="center-align">Recovered or quarantined patients of COVID-19 who are willing to donate</p>
-                    <a id="donor-btn" class="waves-effect waves-light btn trackable-btn pulse" href="https://forms.gle/mTp6J3sGRHucxqra7" target="_blank">Donate Plasma<span class="material-icons">favorite</span></a><br><br>
+                    <!-- <a id="donor-btn" class="waves-effect waves-light btn trackable-btn pulse" href="https://forms.gle/mTp6J3sGRHucxqra7" target="_blank">Donate Plasma<span class="material-icons">favorite</span></a><br><br> -->
+                    <a id="donor-btn" class="waves-effect waves-light btn trackable-btn pulse" href="register.php?role=donor">Donate Plasma<span class="material-icons">favorite</span></a><br><br>
                 </div>
-                <div class="col m4 center-align">    
+                <div class="col m4 s12 center-align">    
                     <h5 id="reg-needhead">YOU NEED THE THERAPY (LOOKING FOR PLASMA)</h5>
                     <p id="reg-needpara" class="center-align">If you are looking out for a donor, register here and we will try to connect with a donor</p>
                     <a id="patient-btn" class="waves-effect waves-light btn trackable-btn" href='https://forms.gle/Fp1MeBwD5gd5nNUNA' target="_blank"><span id="reg-button">REGISTER HERE</span></a><br><br>
                 </div>
-                <div class="col m4 center-align">    
+                <div class="col m4 s12 center-align">    
                     <h5 id="reg-volhead">REGISTER AS A VOLUNTEER (JOIN US)</h5>
                     <p id="reg-volpara" class="center-align">You can motivate a recovered COVID-19 patient to donate plasma and save a COVID-19 patient. Your small step can help a person go back to their family.</p>
-                    <a id="volunteer-btn" class="waves-effect waves-light btn trackable-btn" href='https://forms.gle/FGyztKourfqiRM2MA' target="_blank"><span id="vol-butjoin">Join Now</span></a>
+                    <!-- <a id="volunteer-btn" class="waves-effect waves-light btn trackable-btn" href='https://forms.gle/FGyztKourfqiRM2MA' target="_blank"><span id="vol-butjoin">Join Now</span></a> -->
+                    <a id="volunteer-btn" class="waves-effect waves-light btn trackable-btn" href="register.php?role=volunteer"><span id="vol-butjoin">Join Now</span></a>
                 </div>
               </div>
         </div>
@@ -65,7 +71,7 @@ include('internal/header.php');
                 <div class="col m4">
                     <img src="images/hospital.jpg" alt="" height="200em" class="center-img">
                 </div>
-                <div class="col m8">
+                <div class="col m8 s12">
                     <span id="sit-para1">COVID-19 has been on a rampage in our country since the past 1 year. From less than 100 cases in February 2020, we are now having more than 1,30,00,000 cases.</span>
                     <span id="sit-para2">The good news is that we have been able to recover more than 90% COVID-19 patients. These patients can help the COVID-19 patients by donating their plasma, as a possible cure.</span>
                     <span id="sit-para3">With the vaccination drive underway across the country, there are still a majority of population that still needs to be vaccinated. For this majority, plasma therapy has been developed as an experimental cure for the COVID-19 patients. Plasma therapy has been helping a lot of families recover their loved ones from COVID-19.            </span>
@@ -214,8 +220,8 @@ include('internal/header.php');
     <div id="languageSelector" class="modal">
         <div class="modal-content center-align">
             <h4 class="">Choose Language</h4><hr>
-            <p id="langModalText">Continue in English in <span id="language-auto-select">5</span> seconds</p>
-            Choose from the 4 languages below. You can also change later from menu or bottom of the page.
+            <p id="langModalText">Choose from the 4 languages below. You can also change later from menu or bottom of the page.
+                <br>Click anywhere to continue in English <span id="language-auto-select"></span></p>
         </div>
         <div class="modal-footer"> 
             <div class="center"> 
@@ -258,6 +264,7 @@ $( document ).ready(function() {
             changeLanguage("English")
             $('#languageButton').trigger('click');
             var counter = 5;
+            /*
             var interval = setInterval(function() {
                 counter--;
                 // Display 'counter' wherever you want to display it.
@@ -270,6 +277,7 @@ $( document ).ready(function() {
                     clearInterval(interval);
                 }
             }, 1000); 
+            */
         }
      });          
 
@@ -291,7 +299,7 @@ function changeLanguage() {
 //Button click tracjer
 $(".trackable-btn").click(function(){
     var btn_name = $(this). attr('id'); 
-    $.get("internal/button.php", {"btn" : btn_name} , function(data){
+    $.get("internal/button.php", {"btn" : btn_name, "refer": <?php echo '"'.$GLOBALS['refer'].'"';?> } , function(data){
         console.log(data);
     });        
 });

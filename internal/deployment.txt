@@ -8,4 +8,6 @@ rm NeedPlasma/ -r
 mv ../counter.txt .
 ls -l
 
+sudo systemctl status memcached
+
 #Deployments might break connections and make site unavailale for few (<5) mins

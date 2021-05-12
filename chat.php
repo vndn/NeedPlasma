@@ -91,6 +91,7 @@ const BOT_IMG = "https://image.flaticon.com/icons/svg/327/327779.svg";
 const PERSON_IMG = "https://image.flaticon.com/icons/svg/145/145867.svg";
 const BOT_NAME = "NeedPlasma";
 const PERSON_NAME = "Vandan Kumbhat";
+const SESSION_TOKEN = "ij05das21md09as20u";
 
 msgerForm.addEventListener("submit", event => {
   event.preventDefault();
@@ -128,7 +129,7 @@ function appendMessage(name, img, side, text) {
 function botResponse(msg) {
 
     //Send msg to server and get response
-  const sendMsgToServer(msg, step);
+  sendMsgToServer(msg, step);
 
   //const msgText = BOT_MSGS[r];
   const msgText= "Hello Vandan, let's begin registeration process. What's your age in years?";
@@ -137,6 +138,14 @@ function botResponse(msg) {
   setTimeout(() => {
     appendMessage(BOT_NAME, BOT_IMG, "left", msgText);
   }, delay);
+}
+
+function sendMsgToServer(msg, step){
+const SESSION_TOKEN = "ij05das21md09as20u";
+  $.post("internal/conversation.php", {"message" : msg, "step":step,"session":SESSION_TOKEN} ,
+   function(data){
+        console.log(data);
+    });    
 }
 
 // Utils

@@ -1,7 +1,9 @@
 {
     "STEPS":[
         {
-            "validtions":[] 
+            "key":"Name",
+            "validtions":["MAXCHARS=100"],
+            "messageAlternates":  ["", ""]
         },
         {
 
