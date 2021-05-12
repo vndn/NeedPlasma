@@ -31,12 +31,12 @@ include('internal/header.php');
 <main>
 <?php if ($GLOBALS['role']=="donor") { ?>
     <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdiwyV9Fj93SjknKcRRx9GPFGbuKm8-GAHZEN3QSTAeXCZLxQ/viewform?embedded=true" 
-        width="100%" height="1250" allowfullscreen 
+        width="100%" height="1500" allowfullscreen 
         frameborder="0" marginheight="0" marginwidth="0">Donor Registration
     </iframe>
 <?php } elseif ($GLOBALS['role']=="volunteer") { ?>
     <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe4ten5eBNQdumMV2Lk9pzhgKQcgPozKi38dGjjRgNXv9PLZA/viewform?embedded=true"
-        width="100%" height="1600" allowfullscreen 
+        width="100%" height="2000" allowfullscreen 
         frameborder="0" marginheight="0" marginwidth="0">Volunteer Registration
     </iframe> 
 <?php } else { die("Unknown role"); } ?>
