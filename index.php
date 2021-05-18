@@ -219,18 +219,23 @@ include('internal/header.php');
     <!-- Language Selection Popup -->
     <div id="languageSelector" class="modal">
         <div class="modal-content center-align">
+            
             <h4 class="">Choose Language</h4><hr>
-            <p id="langModalText">Choose from the 4 languages below. You can also change later from menu or bottom of the page.
-                <br>Click anywhere to continue in English <span id="language-auto-select"></span></p>
-        </div>
-        <div class="modal-footer"> 
+            <p id="langModalText">Please read the notice below.(Click notice to zoom in/out)
+                <br>Click anywhere to continue in English <span id="language-auto-select"></span></p>            
             <div class="center"> 
                 <a href='javascript:changeLanguage("Hindi")' lang='ta' class='modal-action modal-close btn teal darken-2'>हिन्दी</a>
                 <a href='javascript:changeLanguage("Marathi")' lang='mr' class='modal-action modal-close btn teal darken-2'><b>मराठी</b></a>
                 <a href='javascript:changeLanguage("Tamil")' lang='ta' id='testLangBtn' class='modal-action modal-close btn teal darken-2'>தமிழ்</a>
                 <a href='javascript:changeLanguage("English")' lang='en' id='defaultLangBtn' class='modal-action modal-close btn teal lighten-2'>English</a> 
                 <a href="#!" id="langCloseBtn" class=" modal-close btn red btn-small">Close</a>
+            </div>              
+            <div class="materialboxed ">  
+                <h5><b>Notice<b></h5>        
+            <img width="100%" class="center" src="images/icmr_plasma.jpeg"/></a>
             </div>
+        </div>
+        <div class="modal-footer"> 
         </div>
       </div>
 
@@ -242,6 +247,7 @@ include('internal/header.php');
 
 <script>
 $( document ).ready(function() {
+    $('.materialboxed').materialbox();
     $('.sidenav').sidenav();
     $(".dropdown-trigger").dropdown(); 
     $('#volunteerPopup').modal();   

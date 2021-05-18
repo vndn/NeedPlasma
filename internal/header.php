@@ -32,7 +32,7 @@ header("Expires: 0"); // Proxies.
     
     <div class="navbar-fixed">
         <nav>
-            <div class="nav-wrapper deep-orange lighten-1">
+            <div class="nav-wrapper green lighten-1">
                 <a href="#!" class="brand-logo"><img src="images/needplasmalogo.webp" height="30" alt=""></a>
                 <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
                 <ul class="right hide-on-med-and-down">
@@ -46,10 +46,10 @@ header("Expires: 0"); // Proxies.
                     <li><a href='mailto:info@needplasma.in' target="_blank" class="right s4 social-links-desktop">
                         <span id="email-btn"><img src="images/email.png" height="30px"></span></a></li>
                     <?php if ($GLOBALS['page']=='home') {  ?>
-                    <li class="deep-orange lighten-2"><a href='javascript:changeLanguage("Hindi")' lang='ta'>हिन्दी</a></li>
-                    <li class="deep-orange lighten-2"><a href='javascript:changeLanguage("English")' lang='en'><b>English</b></a></li>
-                    <li class="deep-orange lighten-2"><a href='javascript:changeLanguage("Tamil")' lang='ta'>தமிழ்</a></li>
-                    <li class="deep-orange lighten-2"><a href='javascript:changeLanguage("Marathi")' lang='mr'>मराठी</a></li>
+                    <li class="green lighten-2"><a href='javascript:changeLanguage("Hindi")' lang='ta'>हिन्दी</a></li>
+                    <li class="green lighten-2"><a href='javascript:changeLanguage("English")' lang='en'><b>English</b></a></li>
+                    <li class="green lighten-2"><a href='javascript:changeLanguage("Tamil")' lang='ta'>தமிழ்</a></li>
+                    <li class="green lighten-2"><a href='javascript:changeLanguage("Marathi")' lang='mr'>मराठी</a></li>
                     <?php } ?>
                     <li><a href="./" lang="en" class="team-btn">Home</a></li>
                     <li><a href="./team.php" lang="en" class="team-btn">Team</a></li>

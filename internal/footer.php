@@ -1,4 +1,4 @@
-<footer class="teal lighten-2">
+<footer class="green lighten-2">
 <div class="footer-copyright">
     <div class="container white-text text-lighten-2">
         <a class="grey-text text-lighten-4" href="#!"><span id="copyrightext">Copyright © 2021 NeedPlasma. All rights reserved</span></a>
