@@ -36,7 +36,7 @@ include('internal/header.php');
             <div class="row center-align">
                 <br><br>
                 <img src="images/needplasmalogo.webp" height="50em" alt="">
-                <h2 id="main-head">SAVE LIVES WITH PLASMA</h2>
+                <h2 id="main-head">SAVE LIVES WITH BLOOD</h2>
                 <h4 id="main-subhead">Plasma from recovered COVID-19 patients can help save lives</h4>
               </div>
         </div>
@@ -47,20 +47,20 @@ include('internal/header.php');
                 <div class="col m6 s12 center-align">    
                     <h5 id="reg-donatehead">WANT TO DONATE PLASMA?</h5>
                     <p id="reg-donatepara" class="center-align">Recovered or quarantined patients of COVID-19 who are willing to donate</p>
-                    <a id="donor-btn" class="green waves-effect waves-light btn trackable-btn pulse" href="https://forms.gle/mTp6J3sGRHucxqra7" target="_blank">Donate Plasma<span class="material-icons">favorite</span></a><br><br>
+                    <a id="donor-btn" class="green waves-effect waves-light btn trackable-btn pulse" href="https://docs.google.com/forms/d/e/1FAIpQLScRifOK0fKNjIWPbB3iHynDZs74z8BSmtc99U_Uc6J8jHaDUg/viewform?usp=sf_link" target="_blank">Donate Blood<span class="material-icons">favorite</span></a><br><br>
                     <!-- <a id="donor-btn" class="waves-effect waves-light btn trackable-btn pulse" href="register.php?role=donor">Donate Plasma<span class="material-icons">favorite</span></a><br><br> -->
                 </div>
                 <div class="col m6 s12 center-align">    
                     <h5 id="reg-needhead">YOU NEED THE THERAPY (LOOKING FOR PLASMA)</h5>
                     <p id="reg-needpara" class="center-align">If you are looking out for a donor, register here and we will try to connect with a donor</p>
-                    <a id="patient-btn" class="red waves-effect waves-light btn trackable-btn" href='https://forms.gle/Fp1MeBwD5gd5nNUNA' target="_blank"><span id="reg-button">REGISTER HERE</span></a><br><br>
+                    <a id="patient-btn" class="red waves-effect waves-light btn trackable-btn" href='https://docs.google.com/forms/d/e/1FAIpQLSel1nVG5xNaS_QxeuhVIWrXt1ETXJUGep9gbxXfHN8Eu937pw/viewform?usp=sf_link' target="_blank"><span id="reg-button">REGISTER HERE</span></a><br><br>
                 </div>
             </div>
             <div class="row center-align">
               <div class="col m6 offset-m3 s12 center-align">    
                     <h5 id="reg-volhead">REGISTER AS A VOLUNTEER (JOIN US)</h5>
                     <p id="reg-volpara" class="center-align">You can motivate a recovered COVID-19 patient to donate plasma and save a COVID-19 patient. Your small step can help a person go back to their family.</p>
-                    <a id="volunteer-btn" class="waves-effect waves-light btn trackable-btn" href='https://forms.gle/FGyztKourfqiRM2MA' target="_blank"><span id="vol-butjoin">Join Now</span></a>
+                    <a id="volunteer-btn" class="waves-effect waves-light btn trackable-btn" href='https://docs.google.com/forms/d/e/1FAIpQLSf5MCS9L9OHrR55wC0uiWLVXqeBTyRP4xVxOUkd7G-frVzksQ/viewform?usp=sf_link' target="_blank"><span id="vol-butjoin">Join Now</span></a>
                     <!-- <a id="volunteer-btn" class="waves-effect waves-light btn trackable-btn" href="register.php?role=volunteer"><span id="vol-butjoin">Join Now</span></a> -->
                 </div>
             </div>              
@@ -71,7 +71,7 @@ include('internal/header.php');
             <div class="row center-align ">
                 <br><br>
                 <div class="col m4">
-                    <img src="images/hospital.jpg" alt="" height="200em" class="center-img">
+                    <img src="images/blood.jpg" alt="" height="200em" class="center-img">
                 </div>
                 <div class="col m8 s12">
                     <span id="sit-para1">COVID-19 has been on a rampage in our country since the past 1 year. From less than 100 cases in February 2020, we are now having more than 1,30,00,000 cases.</span>
@@ -131,31 +131,58 @@ include('internal/header.php');
                 </div>                
             </div>
         </div> 
-<hr><br><br>        
+<hr><br>     
         <div class="container">
             <h4 class='center-align donate-class-head'><b>WHO CAN DONATE</b></h4>
-            <div class="row center-align">
-                <br><br>
-                <div class="col m6 s12"> 
-                    <img src="images/thumbs_up.png" height="100em" alt="thums-up">
-                    <h5 class="donate-class-canhead">CAN DONATE</h5>
-                    <p>
-                        <span class="donate-class-canp1">Were tested positive for COVID-19</span><br>
-                        <span class="donate-class-canp2">Fully recovered and free of Symptoms for 14 days</span><br>
-                        <span class="donate-class-canp3">Between 18-60 years</span><br>
-                    </p>
+            <div class="row center-align" >
+                <div class="col m4 s12"> 
+                    <div class="">
+                        <img class src="images/thumbs_up.png" class="center-img" width="70%" alt="thums-up">
+                    </div>
+                    <h5 class="center-align donate-class-canhead">DONOR ELIGIBILITY</h5>
                 </div>                
-                <div class="col m6 s12">
-                    <img src="images/thumbs_down.png" height="100em" alt="thums-down">
-                    <h5 class="donate-class-canthead">CANNOT DONATE DONATE</h5>
-                    <p>
-                        <span class="donate-class-cantp1">Weight less than 50 kg</span><br>
-                        <span class="donate-class-cantp2">Females who have ever been pregnant</span><br>
-                        <span class="donate-class-cantp3">B.P >140 and diastolic &lt;60 or &gt;90</span><br>
-                        <span class="donate-class-cantp4">Diabetic on insulin</span><br>
-                        <span class="donate-class-cantp5">Cancer Survivor</span><br>
-                        <span class="donate-class-cantp6">Uncontrolled diabetes Chronic kidney/heart/lung/liver disease.</span><br>
-                    </p>
+                <div class="col m8 s12" style="overflow-x:auto;max-height: 250px;overflow:scroll">
+                    <!-- <p class="donate-class-canp1"></p>
+                    <p class="donate-class-canp2"></p> -->
+                    <table class='striped' >
+        <thead>
+          <tr>
+              <th>Criterion</th>
+              <th>Eligibility</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>Weight</td>
+            <td>More than 45KG</td>
+          </tr>
+          <tr>
+            <td>Age</td>
+            <td>Between 18 to 65 years</td>
+          </tr>
+          <tr>
+            <td>Child Birth</td>
+            <td>Child delivered 1 year ago and stopped lacatation</td>
+          </tr>
+          <tr>
+            <td>Haemoglobin</td>
+            <td>Haemoglobin more than 12.5g/dl.</td>
+          </tr>
+          <tr>
+            <td>Weight</td>
+            <td>More than 45KG</td>
+          </tr>
+          <tr>
+            <td>Age</td>
+            <td>Between 18 to 65 years</td>
+          </tr>
+          <tr class="hide-on-small-only">
+            <td>Jonathan</td>
+            <td>Lollipop</td>
+          </tr>
+        </tbody>
+      </table>                    
                 </div>                 
             </div>
         </div>   
