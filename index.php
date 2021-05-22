@@ -44,24 +44,26 @@ include('internal/header.php');
         <div class="container">
             <div class="row center-align">
                 <br><br>
-                <div class="col m4 s12 center-align">    
+                <div class="col m6 s12 center-align">    
                     <h5 id="reg-donatehead">WANT TO DONATE PLASMA?</h5>
                     <p id="reg-donatepara" class="center-align">Recovered or quarantined patients of COVID-19 who are willing to donate</p>
                     <a id="donor-btn" class="green waves-effect waves-light btn trackable-btn pulse" href="https://forms.gle/mTp6J3sGRHucxqra7" target="_blank">Donate Plasma<span class="material-icons">favorite</span></a><br><br>
                     <!-- <a id="donor-btn" class="waves-effect waves-light btn trackable-btn pulse" href="register.php?role=donor">Donate Plasma<span class="material-icons">favorite</span></a><br><br> -->
                 </div>
-                <div class="col m4 s12 center-align">    
+                <div class="col m6 s12 center-align">    
                     <h5 id="reg-needhead">YOU NEED THE THERAPY (LOOKING FOR PLASMA)</h5>
                     <p id="reg-needpara" class="center-align">If you are looking out for a donor, register here and we will try to connect with a donor</p>
                     <a id="patient-btn" class="red waves-effect waves-light btn trackable-btn" href='https://forms.gle/Fp1MeBwD5gd5nNUNA' target="_blank"><span id="reg-button">REGISTER HERE</span></a><br><br>
                 </div>
-                <div class="col m4 s12 center-align">    
+            </div>
+            <div class="row center-align">
+              <div class="col m6 offset-m3 s12 center-align">    
                     <h5 id="reg-volhead">REGISTER AS A VOLUNTEER (JOIN US)</h5>
                     <p id="reg-volpara" class="center-align">You can motivate a recovered COVID-19 patient to donate plasma and save a COVID-19 patient. Your small step can help a person go back to their family.</p>
                     <a id="volunteer-btn" class="waves-effect waves-light btn trackable-btn" href='https://forms.gle/FGyztKourfqiRM2MA' target="_blank"><span id="vol-butjoin">Join Now</span></a>
                     <!-- <a id="volunteer-btn" class="waves-effect waves-light btn trackable-btn" href="register.php?role=volunteer"><span id="vol-butjoin">Join Now</span></a> -->
                 </div>
-              </div>
+            </div>              
         </div>
         <hr>        
         <div class="container">
@@ -216,7 +218,7 @@ include('internal/header.php');
     </div>
   </div>
 
-    <!-- Language Selection Popup -->
+    <!-- Language Selection Popup
     <div id="languageSelector" class="modal">
         <div class="modal-content center-align">
             
@@ -231,13 +233,14 @@ include('internal/header.php');
                 <a href="#!" id="langCloseBtn" class=" modal-close btn red btn-small">Close</a>
             </div>              
             <div class="materialboxed ">  
-                <h5><b>Notice<b></h5>        
+                <h5 class="red"><b>Notice<b></h5>        
             <img width="100%" class="center" src="images/icmr_plasma.jpeg"/></a>
             </div>
         </div>
         <div class="modal-footer"> 
         </div>
       </div>
+      -->
 
 </main>
 

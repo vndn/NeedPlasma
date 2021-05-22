@@ -45,12 +45,12 @@ header("Expires: 0"); // Proxies.
                         <img class="" src="images/youtube.png" alt="youtube link"></a></li> -->
                     <li><a href='mailto:info@needplasma.in' target="_blank" class="right s4 social-links-desktop">
                         <span id="email-btn"><img src="images/email.png" height="30px"></span></a></li>
-                    <?php if ($GLOBALS['page']=='home') {  ?>
+                    <?php /*if ($GLOBALS['page']=='home') {  ?>
                     <li class="green lighten-2"><a href='javascript:changeLanguage("Hindi")' lang='ta'>हिन्दी</a></li>
                     <li class="green lighten-2"><a href='javascript:changeLanguage("English")' lang='en'><b>English</b></a></li>
                     <li class="green lighten-2"><a href='javascript:changeLanguage("Tamil")' lang='ta'>தமிழ்</a></li>
                     <li class="green lighten-2"><a href='javascript:changeLanguage("Marathi")' lang='mr'>मराठी</a></li>
-                    <?php } ?>
+                    <?php } */?>
                     <li><a href="./" lang="en" class="team-btn">Home</a></li>
                     <li><a href="./team.php" lang="en" class="team-btn">Team</a></li>
                     <li><a href="./media.php" lang="en" class="team-btn">Media</a></li>
@@ -65,12 +65,12 @@ header("Expires: 0"); // Proxies.
         </nav>
     </div>
     <ul class="sidenav" id="mobile-demo"> 
-        <?php if ($GLOBALS['page']=='home') {  ?>            
+        <?php /*if ($GLOBALS['page']=='home') {  ?>            
         <li style="padding-top:10%;"><a href='javascript:changeLanguage("Hindi")' lang='hi'>हिन्दी</a></li>
         <li><a href='javascript:changeLanguage("English")' lang='en'><b>English</b></a></li>
         <li><a href='javascript:changeLanguage("Tamil")' lang='ta'>தமிழ்</a></li>
         <li><a href='javascript:changeLanguage("Marathi")' lang='mr'>मराठी</a></li>
-        <?php }  ?>
+        <?php } */ ?>
         <li><a href="./" lang="en" class="team-btn">Home</a></li>
         <li><a href="./team.php" lang="en" class="team-btn">Team</a></li>
         <li><a href="./media.php" lang="en" class="team-btn">Media</a></li>
