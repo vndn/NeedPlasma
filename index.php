@@ -170,17 +170,33 @@ include('internal/header.php');
             <td>Haemoglobin more than 12.5g/dl.</td>
           </tr>
           <tr>
-            <td>Weight</td>
-            <td>More than 45KG</td>
+            <td>Malaria</td>
+            <td>Should Not have been treated for malaria in last 3 months or 3 years if residing in endemic areas</td>
           </tr>
           <tr>
-            <td>Age</td>
-            <td>Between 18 to 65 years</td>
+            <td>Immunization & Vaccination</td>
+            <td>Should NOT have had shots for Cholera, Typhoid, Diptheria, Tetanus, Plague, Gammaglobulin in last 15 days; Rabies vaccination in last 1 year.</td>
           </tr>
-          <tr class="hide-on-small-only">
-            <td>Jonathan</td>
-            <td>Lollipop</td>
+          <tr>
+            <td>Tattoo/Acupunture</td>
+            <td>Should NOT have had any in last 12 months.</td>
           </tr>
+          <tr>
+            <td>Infection</td>
+            <td>Should NOT have Hepatitis B, C, Tuberculosis, Leprosy, HIV.</td>
+          </tr> 
+          <tr>
+            <td>Other Disease</td>
+            <td>Should NOT have Epilepsy, Asthma on Steroids, Bleeding disorders, Thalassemia, Sickle Cell Anemia, Polycythemia Vera.</td>
+          </tr> 
+          <tr>
+            <td>High Risk Individuals</td>
+            <td>Should NOT have had any history of Genital ulcers/Discharge, History of multiple sexual partners and Drug Addiction.</td>
+          </tr> 
+          <tr>
+            <td>Diabetes</td>
+            <td>OK if resolved or controled by diet or oral drug. NO if treated with insulin injections.</td>
+          </tr>                                        
         </tbody>
       </table>                    
                 </div>                 

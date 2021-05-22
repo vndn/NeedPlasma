@@ -19,7 +19,7 @@ header("Expires: 0"); // Proxies.
     <link type="text/css" rel="stylesheet" href="css/style.css?v=987617"/>
     <!-- <link type="text/css" rel="stylesheet" href="css/chat.css?v=987617"/> -->
     <link rel="shortcut icon" href="images/favicon.ico">
-    <title>Save Lives Donate Blood!</title>
+    <title>Save lives now - Donate Blood!</title>
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta charset="UTF-8">

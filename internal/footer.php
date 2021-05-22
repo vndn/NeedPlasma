@@ -7,9 +7,11 @@
         <a href="https://www.freepik.com/vectors/abstract" class = "white-text text-lighten-2">Abstract vector created by macrovector - www.freepik.com</a>
         <a href="https://www.freepik.com/vectors/heart" class = "white-text text-lighten-2" >Heart vector created by kreativkolors - www.freepik.com</a>
         <a href="https://www.freepik.com/vectors/background" class = "white-text text-lighten-2">Background vector created by ibrandify - www.freepik.com</a>
+        <!--
         <button data-target="languageSelector" class=" modal-trigger" id="languageButton">
             <span id="change-lang-footer">Change Language</span>
-        </button>   
+        </button>  
+        -->
         <?php } ?>  
     </div>
   </div>
